@@ -1,9 +1,12 @@
 Rails.application.routes.draw do
-  get 'chats/index'
 
-  get 'chats/new'
+  root 'homepages#index'
 
-  get 'chats/create'
+  get ':channel/new', to: 'homepages#new', as: 'new_message'
+
+  post ':channel', to: 'homepages#create', as: 'create_message'
+
+  
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
