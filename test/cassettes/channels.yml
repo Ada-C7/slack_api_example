@@ -1,0 +1,134 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://slack.com/api/chat.postMessage?as_user=false&channel=queues_api_testing&icon_emoji=:robot_face:&text=test%20message&token=<SLACK_TOKEN>&username=Roberts-Robit
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '248'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Date:
+      - Tue, 02 May 2017 18:17:28 GMT
+      Expires:
+      - Mon, 26 Jul 1997 05:00:00 GMT
+      Pragma:
+      - no-cache
+      Referrer-Policy:
+      - no-referrer
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Vary:
+      - Accept-Encoding
+      X-Accepted-Oauth-Scopes:
+      - chat:write:bot,post
+      X-Content-Type-Options:
+      - nosniff
+      X-Oauth-Scopes:
+      - read,client,admin,identify,post,apps
+      X-Slack-Backend:
+      - h
+      X-Slack-Req-Id:
+      - 4e0c1ea2-decf-46e7-ae59-25df34c138f1
+      X-Xss-Protection:
+      - '0'
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 8b49bec6ed0cc97f9ccf13728cb06b26.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - DIgcaNv0O3po06dvMD-R01qvmuo5RURo63xa2J4Ufmy_P72xhGgyDA==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ok":true,"channel":"C54D2EUAW","ts":"1493749048.756332","message":{"text":"test
+        message","username":"Roberts-Robit","icons":{"emoji":":robot_face:","image_64":"https:\/\/a.slack-edge.com\/f5d6f\/img\/emoji_2016_06_08\/apple\/1f916.png"},"bot_id":"B57TT73DL","type":"message","subtype":"bot_message","ts":"1493749048.756332"}}'
+    http_version: 
+  recorded_at: Tue, 02 May 2017 18:17:39 GMT
+- request:
+    method: post
+    uri: https://slack.com/api/chat.postMessage?as_user=false&channel=this_channel_doesnt_exist&icon_emoji=:robot_face:&text=test%20message&token=<SLACK_TOKEN>&username=Roberts-Robit
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '60'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Date:
+      - Tue, 02 May 2017 18:17:29 GMT
+      Expires:
+      - Mon, 26 Jul 1997 05:00:00 GMT
+      Pragma:
+      - no-cache
+      Referrer-Policy:
+      - no-referrer
+      Server:
+      - Apache
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Vary:
+      - Accept-Encoding
+      X-Accepted-Oauth-Scopes:
+      - chat:write:bot,post
+      X-Content-Type-Options:
+      - nosniff
+      X-Oauth-Scopes:
+      - read,client,admin,identify,post,apps
+      X-Slack-Backend:
+      - h
+      X-Slack-Req-Id:
+      - 0e74a495-0536-4ef6-895c-fd64032f683d
+      X-Xss-Protection:
+      - '0'
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 e8a1bacdefcba30a794b8f2b36714285.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - iCGe9CTfGLwlHPKwwWZ1B4QvazxYHOwHibtUHgshnN7tAzZ4l7Zehw==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ok":false,"error":"channel_not_found"}'
+    http_version: 
+  recorded_at: Tue, 02 May 2017 18:17:39 GMT
+recorded_with: VCR 3.0.3

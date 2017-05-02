@@ -50,6 +50,10 @@ group :development, :test do
   gem 'byebug'
   gem 'dotenv-rails'
   gem 'better_errors'
+
+  # Mocking for API wrapper tests
+  gem 'minitest-vcr'
+  gem 'webmock'
 end
 
 group :test do

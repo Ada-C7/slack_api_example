@@ -25,7 +25,7 @@ class SlackChannel
     response = HTTParty.post(url, query: query_params)
 
     if response["ok"]
-      puts "Everything went swell"
+      return response
     else
       raise SlackException.new(response["error"])
     end
