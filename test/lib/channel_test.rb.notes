@@ -1,0 +1,30 @@
+require 'test_helper'
+
+describe Channel do
+
+  it "Must have at least 2 arguments to initialize" do
+    proc {
+      Channel.new
+    }.must_raise ArgumentError
+
+    proc {
+      Channel.new("Name")
+    }.must_raise ArgumentError
+  end
+
+  it "Can be initialized with both a name & id" do
+    channel = Channel.new("Name", "id")
+
+    channel.name.must_equal "Name"
+    channel.id.must_equal "id"
+  end
+
+  it "Optional parameters can be set" do
+    true.must_equal true
+  end
+
+  it "must also be true" do
+    true.must_equal true
+  end
+
+end

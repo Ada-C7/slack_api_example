@@ -1,12 +1,16 @@
 
 class Channel
+  attr_reader :name, :id, :purpose, :is_archived, :members
 
-  attr_reader :name, :id, :channel_options
+  def initialize(name, id, options = {} )
+    raise ArgumentError if name == nil || name == "" || id == nil || id == ""
 
-  def initialize(name, id, options = {})
     @name = name
     @id = id
-    @channel_options = options
-  end
 
+    @purpose = options["purpose"]
+    @is_archived = options[:is_archived]
+    @is_general = options[:is_general]
+    @members = options[:members]
+  end
 end

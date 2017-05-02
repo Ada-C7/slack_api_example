@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SlackApiWrapper::Get a channel " skipped="0" failures="0" errors="0" tests="2" assertions="0" time="9.899999713525176e-05">
+  <testcase name="test_0002_Returns false for an invalid channel id" classname="SlackApiWrapper::Get a channel " assertions="0" time="2.7000001864507794e-05">
+  </testcase>
+  <testcase name="test_0001_Can get a channel given a valid channel id" classname="SlackApiWrapper::Get a channel " assertions="0" time="7.199999527074397e-05">
+  </testcase>
+</testsuite>

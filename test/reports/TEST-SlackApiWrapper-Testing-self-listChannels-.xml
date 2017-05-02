@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SlackApiWrapper::Testing self.listChannels()" skipped="0" failures="0" errors="0" tests="2" assertions="46" time="0.060580000004847534">
+  <testcase name="test_0001_Can get a list of channels" classname="SlackApiWrapper::Testing self.listChannels()" assertions="45" time="0.039931999999680556">
+  </testcase>
+  <testcase name="test_0002_Will return an empty array with a bad token" classname="SlackApiWrapper::Testing self.listChannels()" assertions="1" time="0.020648000005166978">
+  </testcase>
+</testsuite>
